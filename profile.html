@@ -1,0 +1,429 @@
+<html>
+ <head>
+  <title>
+   Profile
+  </title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111111;
+            color: #ffffff;
+        }
+.header {
+    position: sticky;
+    top: 0;
+    background-color: #111111;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20 15px 20px;
+    margin:0;
+    z-index: 3;
+}
+
+.header .right-icons {
+    display: flex;
+    align-items: center;
+}
+.header .right-icons i {
+    margin-left: 20px;
+}
+.surround{
+    background-color: #101010;
+    width: 60px;
+    height: 10px;
+    padding: 16px 1px 14px 12px;
+    border: .5px solid #4e4e4e;
+    border-radius: 50px;
+}
+.surround a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.name{
+    margin-right: 2px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.menu-icon {
+    height: 24px; /* Adjust height to match the image */
+}
+.menu-icon .bar {
+    position: relative;
+    left: 10px;
+    margin-bottom: 7px;
+    width: 20px; /* Adjust width to match the image */
+    height: 2px; /* Adjust height to match the image */
+    background-color: white; /* White color for the lines */
+    border-radius: 2px; /* Rounded corners */
+}
+
+.menu-icon .middle {
+    width: 15px;
+    left: 15px;
+    position: relative;
+}
+
+.tixr{
+    font-size: 25px;
+    font-weight: bold;
+}
+.tixr:before{
+    left:15px;
+    top: 58px;
+    content: "";
+    height: 20px;
+    width: 95px;
+    position: absolute;
+    background-color: #111111;
+    border-radius: 50%;
+}
+        
+        .container {
+            margin: 10px 20px ;
+            padding: 10px;
+        }
+        .back-arrow,a{
+            margin-bottom: 20px;
+            font-size: 30px;
+            cursor: pointer;
+            color: white;
+        }
+        .profile-title {
+            font-size: 30px;
+            font-weight: bolder;
+            margin: 12px 0 20px 0;
+        }
+        .group-data{
+            margin: 2px 0;
+            padding: 2px;
+            height:auto;
+        }
+        .form-group {
+            width: 100%;
+            border-radius: 5px;
+            background: #1d1d1d;
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            display: block;
+            padding: 10px 10px 0 10px;
+            left: 100px;
+            font-size: 12px;
+            margin-bottom: 1px;
+            color: #454545;
+        }
+        .nothing input{
+            display: block;
+            padding: 10px 10px 5px 10px;
+            left: 100px;
+            font-size: 12px;
+            margin-bottom: 1px;
+            color: #454545;
+            height: 45px;
+        }
+        .form-group input, .form-group select {
+            width: 98%;
+            margin: 1px 1px 8px;
+            padding: 1px 8px;
+            font-size: 16px;
+            border: none;
+            font-weight: lighter;
+            border-radius: 5px;
+            background-color: #1d1d1d;
+            color: #ffffff;
+        }
+        .form-group input[disabled] {
+            color: #ffffff;
+        }
+        .form-group .edit-icon {
+            position: absolute;
+            right: 10px;
+            top: 35px;
+            color: #8d8d8d;
+            cursor: pointer;
+        }
+        .form-group .password-input {
+            position: relative;
+
+        }
+        .form-group .password-input input {
+            padding-right: 30px;
+            color: #646464;
+        }
+        .form-group .password-input .edit-icon {
+            right: 15px;
+            top: 0;
+        }
+        .b-day .mnth,.month,.mom{
+            margin: 0 2px;
+            padding: 0 auto;
+        }
+        .b-day{
+                display: flex;
+                align-items: center;
+                justify-content:space-between;
+                padding-bottom: 5px;
+        }
+        .form-group .select-group {
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-group .select-group select {
+            margin-right: 1px;
+            padding-right: 20px;
+            width: 80%x;
+        }
+        .footer-container{
+            margin: 10px 20px 0 20px ;
+            padding: 10px 10px 0 10px;
+        }
+        footer{
+            margin: 0;
+            border-top: 1px solid #444;
+        }
+        .foot{
+            margin: 20px 20px 10px 15px;
+            font-size: 25px;
+            font-weight: lighter
+        }
+        .foot:before{
+            left:39px;
+            bottom:auto;
+            content: "";
+            height: 20px;
+            width: 95px;
+            margin-top:20px;
+            position: absolute;
+            background-color: #111111;
+            border-radius: 50%;
+        }
+        .footer {
+            display: flex;
+            justify-content:space-between;
+            padding: 20px 15% 20px 20px;
+            background-color: #111111;
+        }
+        .footer div {
+            display: flex;
+            flex-direction:column;
+
+        }
+        .footer h3 {
+            margin: 0 0 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 100%) {
+         .footer {
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer div {
+            margin-bottom: 20px;
+            align-items: center;
+        }}
+        .last {
+            padding: 20px;
+            text-align: left;
+            border-top: 1px solid #444;
+        }
+        .last .language {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .last .language i {
+            margin-right: 10px;
+        }
+        .last .social-icons {
+            display: flex;
+            gap: 20px;
+        }
+        .last .social-icons i {
+            font-size: 24px;
+        }
+
+  </style>
+ </head>
+ <body>
+    <div class="header">
+        <span class="tixr">T I X R</span>
+        <div class="right-icons surround">
+         <span class="name">SJ</span>
+         <div class="menu-icon">
+             <div class="bar"></div>
+             <div class="middle bar"></div>
+             <div class="bar"></div>
+         </div>
+     </div>
+     </div>
+<div class="container">
+    <a href="index.html" ><i class="fas fa-angle-left back-arrow">
+    </i></a>
+    <div class="profile-title">
+    <span>Profile</span> 
+    </div>
+    <div class="group-data">
+    <div class="form-group">
+        <label for="first-name">
+        First name
+        </label>
+        <input id="first-name" type="text" value="sabrina"/>
+    </div>
+    <div class="form-group">
+        <label for="last-name">
+        Last name
+        </label>
+        <input id="last-name" type="text" value="j.christoper"/>
+    </div>
+    <div class="form-group">
+        <label for="email">
+        Email
+        </label>
+        <div class="password-input">
+        <input disable="" id="email" type="email" value="sabrinajchristopher@gmail.com"/>
+        <i class="fas fa-pencil-alt edit-icon">
+        </i>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="password">
+        Password
+        </label>
+        <div class="password-input">
+        <input  id="password" type="password" value="password"/>
+        <i class="fas fa-pencil-alt edit-icon">
+        </i>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="gender">
+        Gender
+        </label>
+        <select id="gender">
+        <option>
+        Female
+        </option>
+        <option>
+        Male
+        </option>
+        <option>
+        Other
+        </option>
+        </select>
+    </div>
+    <div class="form-group b-day">
+        <label  for="birthday">
+        Birthday
+        </label>
+        <div class="select-group">
+        <div class="mnth">
+            <label for="month">
+                Month
+            </label>
+        <select id="month" >
+        <option>
+            Oct
+        </option>
+        <!-- Add other months as needed -->
+        </select>
+        </div>
+        <div  class="mon">
+        <label for="day">
+            Day
+        </label>
+        <select id="day">
+        <option>
+        5
+        </option>
+        <!-- Add other days as needed -->
+        </select>
+        </div>
+        <div  class="moth"> 
+            <label for="year">
+            Year
+        </label>
+        <select id="year">
+        <option>
+        1995
+        </option>
+        <!-- Add other years as needed -->
+        </select>
+        </div>
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label for="country">
+        Country
+        </label>
+        <select id="country">
+        <option>
+        U.S.A.
+        </option>
+        <!-- Add other countries as needed -->
+        </select>
+    </div>
+    <div class="form-group nothing">
+        <label for="postal-code"></label>
+        <input type="text" id="postal-code" placeholder="Postal code">
+    </div>
+    <div class="form-group nothing">
+        <label for="phone-number"> </label>
+        <input type="text" id="phone-number" placeholder="Phone number">
+    </div>
+
+    </div>
+</div>
+ </body>
+ <footer>
+     <div class="footer-container">
+         <span class="foot" alt="TIXR logo">T I X R</span>
+        <div class="footer">
+            <div>
+            <h3>Company</h3>
+            <a href="#">Sell on Tixr</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Discover</a>
+            <a href="#">Fan Support</a>
+            </div>
+        <div>
+            <h3>Legal</h3>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Manage Cookies</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Privacy Choices</a>
+            <a href="#">Do Not Sell My Info</a>
+            <a href="#">Terms</a>
+        </div>
+         </div>
+         <div class="last">
+            <div class="language">
+                <i class="fas fa-globe"></i>
+                <span>English</span>
+            </div>
+            <div class="social-icons">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+    </div>
+ </footer>
+</html>

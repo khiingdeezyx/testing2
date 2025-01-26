@@ -1,0 +1,537 @@
+<html>
+ <head>
+  <title>
+   Menu
+  </title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+    *{
+            margin: 0;
+    }
+    body {     
+             margin: 0;
+             font-family: Arial, sans-serif;
+             background-color: #111111;
+             color: #fff;
+    }
+    .home{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #111111;
+        color: #fff;
+    }
+    
+         .container {
+            margin:  10px 5px;
+             padding: 10px 20px;
+         }
+         .contain {
+             margin: 0;
+             background-color:#111111;
+
+             padding: 10px 25px;
+         }
+         .header {
+    position: sticky;
+    top: 0;
+    background-color: #111111;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20 15px 20px;
+    margin:0;
+    z-index: 3;
+}
+
+.header .right-icons {
+    display: flex;
+    align-items: center;
+}
+.header .right-icons i {
+    margin-left: 20px;
+}
+.surround{
+    background-color: #101010;
+    width: 60px;
+    height: 10px;
+    padding: 16px 1px 14px 12px;
+    border: .5px solid #4e4e4e;
+    border-radius: 50px;
+}
+.surround a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.name{
+    margin-right: 2px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.menu-icon {
+    height: 24px; /* Adjust height to match the image */
+}
+.menu-icon .bar {
+    position: relative;
+    left: 10px;
+    margin-bottom: 7px;
+    width: 20px; /* Adjust width to match the image */
+    height: 2px; /* Adjust height to match the image */
+    background-color: white; /* White color for the lines */
+    border-radius: 2px; /* Rounded corners */
+}
+
+.menu-icon .middle {
+    width: 15px;
+    left: 15px;
+    position: relative;
+}
+
+.tixr{
+    font-size: 25px;
+    font-weight: bold;
+}
+.tixr:before{
+    left:15px;
+    top: 58px;
+    content: "";
+    height: 20px;
+    width: 95px;
+    position: absolute;
+    background-color: #111111;
+    border-radius: 50%;
+}
+         .menu-item {
+             display: flex;
+             align-items: center;
+             padding: 25px 20px 15px 15px;
+
+         }
+         .stk{
+            position: sticky;
+            top: 0;
+         
+         }
+         .line{
+            padding-bottom: 30px;
+            border-bottom: 1px  solid #333;
+         } 
+         .menu-item i{
+             margin-right: 15px;
+             font-size: 20px;
+             padding: auto;
+             margin: 5px 10px 2px 10px;
+         }
+         .menu-item span{
+            margin-left: 10px;
+            font-weight: bold;
+            font-size: 20px;
+            font-stretch: ultra-expanded;
+         }
+         .menu-item a{
+            text-decoration:none ;
+            font-size: 20px;
+            color: #fff;
+         }
+         .re {
+            padding-bottom: 35px;
+         }
+         .logout-button {
+             display: block;
+             width: 100%;
+             height: 60px;
+             padding: 15px;
+             margin-top: 20px;
+             text-align: center;
+             background-color: #333;
+             border: none;
+             border-radius: 10px;
+             color: #fff;
+             font-size: 16px;
+         }
+		 
+		  .footer-container{
+            margin: 10px 20px 0 20px ;
+            padding: 10px 10px 0 10px;
+        }
+        footer{
+            margin: 0;
+            border-top: 1px solid #444;
+        }
+        .foot{
+            margin: 20px 20px 10px 15px;
+            font-size: 25px;
+            font-weight: lighter
+        }
+        .foot:before{
+            left:39px;
+            bottom:auto;
+            content: "";
+            height: 20px;
+            width: 95px;
+            margin-top:20px;
+            position: absolute;
+            background-color: #111111;
+            border-radius: 50%;
+        }
+        .footer {
+            display: flex;
+            justify-content:space-between;
+            padding: 20px 15% 20px 20px;
+            background-color: #111111;
+        }
+        .footer div {
+            display: flex;
+            flex-direction:column;
+
+        }
+        .footer h3 {
+            margin: 0 0 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 100%) {
+         .footer {
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer div {
+            margin-bottom: 20px;
+            align-items: center;
+        }}
+        .last {
+            padding: 20px;
+            text-align: left;
+            border-top: 1px solid #444;
+        }
+        .last .language {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .last .language i {
+            margin-right: 10px;
+        }
+        .last .social-icons {
+            display: flex;
+            gap: 20px;
+        }
+        .last .social-icons i {
+            font-size: 24px;
+        }
+        @keyframes side-n{
+	
+	0% {
+	transform:translateX (100%);
+	}
+	
+	100% {
+	transform:translateX (0);
+	}
+        }
+	/*the css for the pop is here below*/
+.pop    {
+           
+           display:none;
+           margin: 0;
+           font-family: Arial, sans-serif;
+           background-color: #1d1d1d;
+           color: #ffffff;
+       }
+       .containr {
+           margin: 10px 15px 0 ;
+           padding: 10px 10px 0;
+       }
+       .heder {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding: 10px 0;
+           position: relative;
+           margin: 20px 40px 15px 25px;
+       }
+       .heder .username {
+           font-size: 16px;
+       }
+       .heder .close-icon {
+           padding: 6px;
+           border-radius: 50%;
+           background-color: #333;
+           font-size: 20px;
+           color: white;
+       }
+       .close-icon a{
+           border-radius: 50%;
+           background-color: #333;
+           font-size: 20px;
+           color: white;
+       }
+       .menuitem {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding: 20px 5px ;
+           border-radius: 20px;
+           width: 10hv;
+           background: #111111;
+           margin-bottom: 10px;
+           right: 5px;
+           position: relative;
+           
+       }
+       .menuitem i {
+           margin: 0 20px;
+       }
+       .menuitem .text {
+           display: flex;
+           align-items: center;
+       }
+       .menuitem .arrow {
+           font-size: 20px;
+       }
+       .border{
+           margin:30px 0 5px;
+           padding: 10px 1px;
+           border-top: 1px solid #333;
+
+           border-bottom: 1px solid #333;
+       }
+       .language, .logout {
+           display:flex;
+           align-items: center;
+           padding: 12px 0;
+           
+       }
+       .language i, .logout i {
+           margin-right: 10px;
+       }
+       .links {
+           padding: 10px 0;
+           border-bottom: 1px solid #333;
+       }
+       .links a {
+           display: block;
+           color: #fff;
+           text-decoration: none;
+           padding: 8px 0;
+       }
+       .last {
+           padding: 20px;
+           text-align: left;
+           border-top: 1px solid #444;
+       }
+       .last .language {
+           display: flex;
+           align-items: center;
+           margin-bottom: 20px;
+       }
+       .last .language i {
+           margin-right: 10px;
+       }
+       .last .social-icons {
+           display: flex;
+           gap: 20px;
+       }
+       .last .social-icons i {
+           font-size: 24px;
+       }
+   </style>
+ </head>
+ <body>
+     <div id="pop" class="pop ">
+            <div class="heder">
+                <div class="username">sabrina j.christoper</div>
+                    <div class="close-icon" id="exit" onclick = "document.getElementById('home').style.display='block'">
+                   <div onclick = "document.getElementById('pop').style.display='none'">
+                    <i class="fas fa-times"></i>
+                    </div>
+                    </div>
+                </div>
+                <div class="containr">
+                    <div class="menuitem">
+                        <div class="text">
+                            <i class="fas fa-user"></i>
+                            <span>Account</span>
+                        </div>
+                        <div class="arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                    <div class="menuitem">
+                        <div class="text">
+                            <i class="fas fa-wallet"></i>
+                            <span>Wallet</span>
+                        </div>
+                        <div class="arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                    <div class="menuitem">
+                        <div class="text">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Media</span>
+                        </div>
+                        <div class="arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                    <div class="border">
+                    <div class="language">
+                        <i class="fas fa-globe"></i>
+                        <span>English</span>
+                    </div>
+                    <div class="logout">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span>Log Out</span>
+                    </div>
+                    </div>
+                    <div class="links">
+                        <a href="#">Discover</a>
+                        <a href="#">Sell on Tixr</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Fan Support</a>
+                    </div>
+                    <div class="last">
+                       
+                        <div class="social-icons">
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                    </div>
+                </div>
+     </div>
+        <div class="home" id="home">
+        <div class="header">
+            <span class="tixr">T I X R</span>
+            <div  onclick = "document.getElementById('pop').style.display='block'">
+            <div class="right-icons surround" id="menu" onclick = "document.getElementById('home').style.display='none'">
+                <span class="name">SJ</span>
+             <div class="menu-icon">
+                 <div class="bar"></div>
+                 <div class="middle bar"></div>
+                 <div class="bar"></div>
+         </div>
+        </div>
+         </div>
+         </div>
+    <div class="container">
+   <div class=" menu-item line main">
+    <a href="profile.html">
+    <i class="fas fa-user-circle">
+    </i>
+    <span>
+     Profile
+    </span></a>
+   </div>
+<div class="main">
+   <div class="menu-item">
+    <a href="order.html">
+    <i class="fas fa-box">
+    </i>
+    <span>
+     Orders
+    </span></a>
+   </div>
+   <div class="menu-item">
+    <i class="fas fa-file-invoice">
+    </i>
+    <span>
+     Invoices
+    </span>
+   </div>
+   <div class="menu-item re line">
+    <i class="fa-light fa-star">
+    </i>
+    <span>
+     Rewards
+    </span>
+   </div>
+</div>
+<div class="main">
+   <div class="menu-item line">
+    <i class="fas fa-credit-card">
+    </i>
+    <span>
+     Payment Methods
+    </span>
+   </div>
+</div>
+<div class="main">
+   <div class="menu-item  ">
+    <i class="fas fa-cog">
+    </i>
+    <span>
+     Settings
+    </span>
+   </div>
+   <div class="menu-item line">
+    <i class="fa fa-question-circle">
+    </i>
+    <span>
+     Need Help?
+    </span>
+   </div>
+</div>
+   <button class="logout-button">
+    Log Out
+   </button>
+  </div>
+ <footer>
+     <div class="footer-container">
+         <span class="foot" alt="TIXR logo">T I X R</span>
+        <div class="footer">
+            <div>
+            <h3>Company</h3>
+            <a href="#">Sell on Tixr</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Discover</a>
+            <a href="#">Fan Support</a>
+            </div>
+        <div>
+            <h3>Legal</h3>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Manage Cookies</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Privacy Choices</a>
+            <a href="#">Do Not Sell My Info</a>
+            <a href="#">Terms</a>
+        </div>
+         </div>
+         <div class="last">
+            <div class="language">
+                <i class="fas fa-globe"></i>
+                <span>English</span>
+            </div>
+            <div class="social-icons">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+        </div>
+ </footer>
+</div>
+</body>
+
+ <script>
+     
+     var exit = document.getElementById('exit');
+     var menu = document.getElementById('menu');
+    var po = document.getElementById('pop');
+
+        exit.addEventListner('click', function(e) {
+           po.classList.add('pop')
+
+        });
+
+ </script>
+</html>
