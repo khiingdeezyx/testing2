@@ -5,6 +5,7 @@
   </title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link rel="shortcut icon" href="logo2.png">
   <style>
    body {
             margin: 0;
@@ -24,10 +25,17 @@
     margin:0;
     z-index: 3;
 }
+.header img {
+    background: rgba(0, 0, 0, 0);
+    width: 90px;
+    left: 16px;
+    top: 36px; 
+}
 
 .header .right-icons {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 .header .right-icons i {
     margin-left: 20px;
@@ -215,16 +223,24 @@
             flex-direction:column;
 
         }
+        .footer-container img{
+            background: rgba(0, 0, 0, 0);
+            width: 90px;
+            left: 16px;
+            top: 36px; 
+        }
         .footer h3 {
+            line-height: 30px;
             margin: 0 0 10px 0;
-            font-size: 16px;
+            font-size: 17px;
             font-weight: bold;
         }
         .footer a {
-            color: #fff;
+            line-height: 20px;
+            color: #ffffffd9;
             text-decoration: none;
             margin: 5px 0;
-            font-size: 14px;
+            font-size: 16px;
         }
         .footer a:hover {
             text-decoration: underline;
@@ -263,7 +279,7 @@
  </head>
  <body>
     <div class="header">
-        <span class="tixr">T I X R</span>
+        <img src="logo2.png" class="foot" alt="TIXR logo" />
         <div class="right-icons surround">
          <span class="name">SJ</span>
          <div class="menu-icon">
@@ -394,7 +410,7 @@
  </body>
  <footer>
      <div class="footer-container">
-         <span class="foot" alt="TIXR logo">T I X R</span>
+        <img src="logo2.png" class="foot" alt="TIXR logo" />
         <div class="footer">
             <div>
             <h3>Company</h3>
