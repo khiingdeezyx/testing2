@@ -1,10 +1,12 @@
+
 <html>
  <head>
   <title>
-   Menu
+   hmoe page
   </title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link rel="shortcut icon" href="logo2.png">
   <style>
     *{
             margin: 0;
@@ -33,7 +35,7 @@
 
              padding: 10px 25px;
          }
-         .header {
+.header {
     position: sticky;
     top: 0;
     background-color: #111111;
@@ -45,10 +47,16 @@
     margin:0;
     z-index: 3;
 }
-
+.header img {
+    background: rgba(0, 0, 0, 0);
+    width: 90px;
+    left: 16px;
+    top: 36px; 
+}
 .header .right-icons {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 .header .right-icons i {
     margin-left: 20px;
@@ -158,6 +166,12 @@
             margin: 10px 20px 0 20px ;
             padding: 10px 10px 0 10px;
         }
+        .footer-container img{
+            background: rgba(0, 0, 0, 0);
+            width: 90px;
+            left: 16px;
+            top: 36px; 
+        }
         footer{
             margin: 0;
             border-top: 1px solid #444;
@@ -190,15 +204,17 @@
 
         }
         .footer h3 {
+            line-height: 30px;
             margin: 0 0 10px 0;
-            font-size: 16px;
+            font-size: 17px;
             font-weight: bold;
         }
         .footer a {
-            color: #fff;
+            line-height: 20px;
+            color: #ffffffd9;
             text-decoration: none;
             margin: 5px 0;
-            font-size: 14px;
+            font-size: 16px;
         }
         .footer a:hover {
             text-decoration: underline;
@@ -363,14 +379,14 @@
                 <div class="containr">
                     <div class="menuitem">
                         <div class="text">
-                            <i class="fas fa-user"></i>
+                            <i class="far fa-user"></i>
                             <span>Account</span>
                         </div>
                         <div class="arrow"><i class="fas fa-chevron-right"></i></div>
                     </div>
                     <div class="menuitem">
                         <div class="text">
-                            <i class="fas fa-wallet"></i>
+                            <i class="fa fa-wallet"></i>
                             <span>Wallet</span>
                         </div>
                         <div class="arrow"><i class="fas fa-chevron-right"></i></div>
@@ -411,7 +427,7 @@
      </div>
         <div class="home" id="home">
         <div class="header">
-            <span class="tixr">T I X R</span>
+            <img src="logo2.png" />
             <div  onclick = "document.getElementById('pop').style.display='block'">
             <div class="right-icons surround" id="menu" onclick = "document.getElementById('home').style.display='none'">
                 <span class="name">SJ</span>
@@ -426,7 +442,7 @@
     <div class="container">
    <div class=" menu-item line main">
     <a href="profile.html">
-    <i class="fas fa-user-circle">
+    <i class="far fa-user-circle">
     </i>
     <span>
      Profile
@@ -442,7 +458,15 @@
     </span></a>
    </div>
    <div class="menu-item">
-    <i class="fas fa-file-invoice">
+    <a href="order.html">
+    <i class="fas fa-box">
+    </i>
+    <span>
+     Transfers
+    </span></a>
+   </div>
+   <div class="menu-item">
+    <i class="fa fa-file-invoice">
     </i>
     <span>
      Invoices
@@ -458,7 +482,7 @@
 </div>
 <div class="main">
    <div class="menu-item line">
-    <i class="fas fa-credit-card">
+    <i class="fa fa-credit-card">
     </i>
     <span>
      Payment Methods
@@ -487,7 +511,7 @@
   </div>
  <footer>
      <div class="footer-container">
-         <span class="foot" alt="TIXR logo">T I X R</span>
+         <img src="logo2.png" class="foot" alt="TIXR logo" />
         <div class="footer">
             <div>
             <h3>Company</h3>
