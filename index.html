@@ -116,7 +116,7 @@
          .menu-item {
              display: flex;
              align-items: center;
-             padding: 25px 20px 15px 15px;
+             padding: 25px 20px 1px 15px;
 
          }
          .stk{
@@ -128,8 +128,7 @@
             padding-bottom: 30px;
             border-bottom: 1px  solid #333;
          } 
-         .menu-item i{
-             margin-right: 15px;
+         .menu-item img{
              font-size: 20px;
              padding: auto;
              margin: 5px 10px 2px 10px;
@@ -141,6 +140,8 @@
             font-stretch: ultra-expanded;
          }
          .menu-item a{
+            display: flex;
+            align-items: center;
             text-decoration:none ;
             font-size: 20px;
             color: #fff;
@@ -229,24 +230,28 @@
             align-items: center;
         }}
         .last {
-            padding: 20px;
-            text-align: left;
-            border-top: 1px solid #444;
-        }
+           padding: 15px 0;
+           text-align: left;
+           border-top: 1px solid #444;
+       }
         .last .language {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .last .language i {
-            margin-right: 10px;
+            margin: 0 0 5px 0;
+           display: flex;
+           align-items: center;
+           padding: 0;
+       }
+        .last .language img {
+            padding: 0;
+            width: 35px;
         }
         .last .social-icons {
             display: flex;
             gap: 20px;
         }
-        .last .social-icons i {
-            font-size: 24px;
+        .last .social-icons img {
+            width: 30px;
+            margin: 0;
+            padding: 0;
         }
         @keyframes side-n{
 	
@@ -308,7 +313,7 @@
            position: relative;
            
        }
-       .menuitem i {
+       .menuitem img {
            margin: 0 20px;
        }
        .menuitem .text {
@@ -344,29 +349,10 @@
            text-decoration: none;
            padding: 8px 0;
        }
-       .last {
-           padding: 20px;
-           text-align: left;
-           border-top: 1px solid #444;
-       }
-       .last .language {
-           display: flex;
-           align-items: center;
-           margin-bottom: 20px;
-       }
-       .last .language i {
-           margin-right: 10px;
-       }
-       .last .social-icons {
-           display: flex;
-           gap: 20px;
-       }
-       .last .social-icons i {
-           font-size: 24px;
-       }
    </style>
  </head>
  <body>
+    <!--the pop up is here-->
      <div id="pop" class="pop ">
             <div class="heder">
                 <div class="username">sabrina j.christoper</div>
@@ -379,32 +365,32 @@
                 <div class="containr">
                     <div class="menuitem">
                         <div class="text">
-                            <i class="far fa-user"></i>
+                            <img src="Profile.png" width="30px">
                             <span>Account</span>
                         </div>
                         <div class="arrow"><i class="fas fa-chevron-right"></i></div>
                     </div>
                     <div class="menuitem">
                         <div class="text">
-                            <i class="fa fa-wallet"></i>
+                            <img src="Wallet.png" width="30px">
                             <span>Wallet</span>
                         </div>
                         <div class="arrow"><i class="fas fa-chevron-right"></i></div>
                     </div>
                     <div class="menuitem">
                         <div class="text">
-                            <i class="fas fa-play-circle"></i>
+                            <img src="Media.png" width="30px">
                             <span>Media</span>
                         </div>
                         <div class="arrow"><i class="fas fa-chevron-right"></i></div>
                     </div>
                     <div class="border">
                     <div class="language">
-                        <i class="fas fa-globe"></i>
+                        <img src="English.png" width="30px">
                         <span>English</span>
                     </div>
                     <div class="logout">
-                        <i class="fas fa-sign-out-alt"></i>
+                        <img src="Logout.png" width="30px">
                         <span>Log Out</span>
                     </div>
                     </div>
@@ -418,13 +404,14 @@
                     <div class="last">
                        
                         <div class="social-icons">
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-instagram"></i>
-                            <i class="fab fa-facebook"></i>
+                            <img src="X.png" width="30px">
+                            <img src="IG.png" width="30px">
+                            <img src="FB.png" width="30px">
                         </div>
                     </div>
                 </div>
      </div>
+     <!--main page code is down here-->
         <div class="home" id="home">
         <div class="header">
             <img src="logo2.png" />
@@ -442,8 +429,7 @@
     <div class="container">
    <div class=" menu-item line main">
     <a href="profile.html">
-    <i class="far fa-user-circle">
-    </i>
+    <img src="Profile.png" width="30px">
     <span>
      Profile
     </span></a>
@@ -451,30 +437,26 @@
 <div class="main">
    <div class="menu-item">
     <a href="order.html">
-    <i class="fas fa-box">
-    </i>
+    <img src="Orders.png" width="30px">
     <span>
      Orders
     </span></a>
    </div>
    <div class="menu-item">
-    <a href="order.html">
-    <i class="fas fa-box">
-    </i>
+    <a href="#">
+    <img src="Transfers.png" width="30px">
     <span>
      Transfers
     </span></a>
    </div>
    <div class="menu-item">
-    <i class="fa fa-file-invoice">
-    </i>
+    <img src="invoices.png" width="30px">
     <span>
      Invoices
     </span>
    </div>
    <div class="menu-item re line">
-    <i class="fa-light fa-star">
-    </i>
+   <img src="Rewards.png" width="30px">
     <span>
      Rewards
     </span>
@@ -482,8 +464,7 @@
 </div>
 <div class="main">
    <div class="menu-item line">
-    <i class="fa fa-credit-card">
-    </i>
+    <img src="Payment Method.png" width="30px">
     <span>
      Payment Methods
     </span>
@@ -491,15 +472,13 @@
 </div>
 <div class="main">
    <div class="menu-item  ">
-    <i class="fas fa-cog">
-    </i>
+    <img src="Settings.png" width="30px">
     <span>
      Settings
     </span>
    </div>
    <div class="menu-item line">
-    <i class="fa fa-question-circle">
-    </i>
+    <img src="Need Help.png" width="30px">
     <span>
      Need Help?
     </span>
@@ -533,13 +512,13 @@
          </div>
          <div class="last">
             <div class="language">
-                <i class="fas fa-globe"></i>
+                <img src="English.png">
                 <span>English</span>
             </div>
             <div class="social-icons">
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-facebook"></i>
+                <img src="X.png" >
+                <img src="IG.png" >
+                <img src="FB.png">
             </div>
         </div>
  </footer>
